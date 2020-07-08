@@ -20,7 +20,7 @@ jobs:
         sudo unzip -o tflint.zip -d /usr/bin
         sudo chmod +x /usr/bin/tflint
     - name: setup terraform_docs
-      run: curl -L "$(curl -s https://api.github.com/repos/segmentio/terraform-docs/releases/latest | grep -o -E "https://.+?-linux-amd64")" > terraform-docs && chmod +x terraform-docs && sudo mv terraform-docs /usr/bin/
+      run: curl -L "$(curl -Ls https://api.github.com/repos/segmentio/terraform-docs/releases/latest | grep -o -E "https://.+?-linux-amd64")" > terraform-docs && chmod +x terraform-docs && sudo mv terraform-docs /usr/bin/
     - uses: actions/cache@v1
       with:
         path: ~/.cache/pre-commit
