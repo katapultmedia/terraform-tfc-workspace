@@ -1,3 +1,7 @@
+provider "aws" {
+  region = "us-west-2"
+}
+
 locals {
   application_name = "academy"
   db_username      = "${local.application_name}dba"
