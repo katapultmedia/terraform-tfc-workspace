@@ -16,7 +16,7 @@ jobs:
     - name: setup tflint
       run: |-
         sudo apt-get install unzip -y
-        curl -L "$(curl -s https://api.github.com/repos/terraform-linters/tflint/releases/latest | grep -o -E "https://.+?_linux_amd64.*zip")" > tflint.zip
+        curl -L "$(curl -Ls https://api.github.com/repos/terraform-linters/tflint/releases/latest | grep -o -E "https://.+?_linux_amd64.*zip")" > tflint.zip
         sudo unzip -o tflint.zip -d /usr/bin
         sudo chmod +x /usr/bin/tflint
     - name: setup terraform_docs
