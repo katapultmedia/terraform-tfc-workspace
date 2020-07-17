@@ -1,2 +1,8 @@
-# terraform-aws-ecs-fargate-app
-A Terraform module to easily deploy a Fargate app. Based on the amazing CloudPosse modules.
+# terraform-tfc-workspace
+
+A Terraform module to easily create workspaces in Terraform Cloud.
+
+<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Inputs
+
+<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
