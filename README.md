@@ -1,5 +1,6 @@
 # terraform-tfc-workspace
-A Terraform module to easily deploy workspaces to Terraform Cloud.
+
+A Terraform module to easily create workspaces in Terraform Cloud.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Inputs
