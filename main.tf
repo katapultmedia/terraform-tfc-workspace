@@ -5,7 +5,7 @@ resource "tfe_workspace" "workspace" {
   auto_apply            = var.auto_apply
   file_triggers_enabled = true
   queue_all_runs        = true
-  ssh_key_id            = data.tfe_ssh_key.github.id
+  ssh_key_id            = var.github_tfe_ssh_key
   terraform_version     = var.terraform_version
   working_directory     = var.working_directory
 
