@@ -36,6 +36,10 @@ variable "working_directory" {
   description = "A relative path that Terraform will execute within. Defaults to the root of your repository."
 }
 
+variable "github_tfe_ssh_key" {
+  description = "The github ssh key for tfe"
+}
+
 // App Vars
 
 variable "secrets" {

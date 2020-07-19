@@ -1,8 +1,3 @@
-data "tfe_ssh_key" "github" {
-  name         = "github"
-  organization = var.organization
-}
-
 resource "tfe_workspace" "workspace" {
   name         = var.name
   organization = var.organization
