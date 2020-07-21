@@ -1,7 +1,18 @@
-provider "aws" {
-  region = "us-west-2"
+variable "tfe_token" {
+  default = ""
+}
+variable "ssh_key" {
+  default = ""
 }
 
-resource "null_resource" "test1" {
+module "core" {
+  source = "../"
 
+  organization      = "organization-test"
+  branch            = "master"
+  ssh_key           = var.ssh_key
+  working_directory = "/test"
+  name              = "terraform-tfc-workspace"
+  oauth_token_id    = "alkasiopejk"
+  repo              = "katapultmedia/terraform-tfc-workspace"
 }
