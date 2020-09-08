@@ -22,6 +22,7 @@
 | branch | The repository branch that Terraform will execute from. Default to master. | `any` | n/a | yes |
 | file\_triggers\_enabled | n/a | `bool` | `true` | no |
 | hcl\_vars | n/a | `map` | `{}` | no |
+| ingress\_submodules | n/a | `bool` | `false` | no |
 | name | Name of the workspace. | `any` | n/a | yes |
 | oauth\_token\_id | The OAuth token id for the VCS provider. | `any` | n/a | yes |
 | organization | The name of the organization the workspace is under. | `any` | n/a | yes |

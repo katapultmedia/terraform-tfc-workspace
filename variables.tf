@@ -32,6 +32,10 @@ variable "branch" {
   description = "The repository branch that Terraform will execute from. Default to master."
 }
 
+variable "ingress_submodules" {
+  default = false
+}
+
 variable "working_directory" {
   description = "A relative path that Terraform will execute within. Defaults to the root of your repository."
 }
