@@ -58,3 +58,11 @@ variable "hcl_vars" {
   type    = map
   default = {}
 }
+
+variable "file_triggers_enabled" {
+  default = true
+}
+
+variable "queue_all_runs" {
+  default = true
+}
