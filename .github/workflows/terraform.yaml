@@ -18,6 +18,8 @@ jobs:
 
     - name: Install terraform
       uses: hashicorp/setup-terraform@v1
+      with:
+        cli_config_credentials_token: ${{ secrets.TFE_TOKEN }}
 
     - name: Terraform Init
       id: init
