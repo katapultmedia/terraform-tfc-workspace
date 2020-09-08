@@ -1,13 +1,6 @@
 # terraform-tfc-workspace
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-## Requirements
-
-| Name | Version |
-|------|---------|
-| terraform | >= 0.12.0 |
-| tfe | ~> 0.15.0 |
-
 ## Providers
 
 | Name | Version |
@@ -17,7 +10,7 @@
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+|------|-------------|------|---------|:-----:|
 | auto\_apply | Whether to automatically apply changes when a Terraform plan is successful. Defaults to false. | `bool` | `false` | no |
 | branch | The repository branch that Terraform will execute from. Default to master. | `any` | n/a | yes |
 | file\_triggers\_enabled | n/a | `bool` | `true` | no |

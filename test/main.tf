@@ -1,3 +1,7 @@
+provider "aws" {
+  region = "us-west-1"
+}
+
 variable "tfe_token" {
   default = ""
 }
